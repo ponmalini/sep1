@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #Showbutton{
+        margin-top: 15px;
+        width: 160px;
+        height: 55px;
+        font-size: larger;
+        background-color:rgb(148, 5, 196);
+    }
+    #Showbutton:active{
+              background-color: aqua;
+    }
+    #Showbutton:active{
+              background-color: red;
+    }
+
+</style>
+</head>
+<body>
+    <input type="text" id="userinput">
+    <p id="displaytext"></p>
+    <button id="Showbutton" onclick="fun()">Show</button>
+    <script>
+        function fun(){
+            let a=document.getElementById("userinput");
+            if(a.value==="")
+            document.getElementById("displaytext").innerHTML="please enter data in input";
+        else
+            document.getElementById("displaytext").innerHTML=document.getElementById("userinput").value
+        }
+    </script>
+</body>
+</html>
